@@ -14,7 +14,7 @@ const About = () => {
       }, [dispatch]);
     if (status === "loading") return <CircularProgress />;
     if (status === "failed") return <p>Error: {error}</p>;
-    console.log(users);
+    // console.log(users);
   return (
   <Box id="about" sx={{ py: 5 }}>
     <Box>
@@ -24,7 +24,7 @@ const About = () => {
     </Typography>
     </Box>
     <Divider sx={{py:2}} />
-    <Box>
+    <Box >
       <Typography variant="h5" gutterBottom>Hobbies</Typography>
       <Typography variant="body1">
         {status === "succeeded" && users.hobbies.map((hobby, index) => (

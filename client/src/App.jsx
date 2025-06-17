@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import { CssBaseline, Container } from '@mui/material';
 import { useDispatch } from 'react-redux';
 import { fetchProjects } from './slices/projectSlice';
+import Education from './components/Education';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Container align="center" sx={{ mt: 4 }} maxWidth="100%">
         <Hero />
         <About />
+        <Education />
         <Projects />
         <Contact />
       </Container>

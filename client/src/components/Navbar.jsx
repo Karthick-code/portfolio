@@ -32,6 +32,9 @@ const Navbar = () => {
         <Button color="inherit" href="#about">
           About
         </Button>
+        <Button color="inherit" href="#education">
+          Education
+        </Button>
         <Button color="inherit" href="#projects">
           Projects
         </Button>

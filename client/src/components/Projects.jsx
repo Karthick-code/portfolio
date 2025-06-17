@@ -32,9 +32,9 @@ const Projects = () => {
   if (status === "failed") {
     return <div>Error: {error}</div>;
   }
-  console.log(projects);
+  // console.log(projects);
   return (
-    <Box id="projects" sx={{ py: 5, backgroundColor: "#f5f5f5" }}>
+    <Box id="projects" sx={{ py: 5 }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ const Projects = () => {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <Card sx={{ height: "100%", boxShadow: 3 }}>
+                  <Card sx={{ height: "100%", boxShadow: 3 ,backgroundColor: "#f5f5f5"}}>
                     <CardContent>
                       <Typography variant="h6" gutterBottom>
                         {project.title}
@@ -80,9 +80,8 @@ const Projects = () => {
                               color="secondary"
                             />
                             {(index < project.technologies.length - 1)?(
-                            <Typography > |</Typography>):""}
+                            <Typography >|</Typography>):""}
                           </>
-                          
                         ))}
                       </Box>
                       <Box
@@ -117,29 +116,7 @@ const Projects = () => {
         </motion.div>
       </Container>
     </Box>
-    // <Box id="projects" sx={{ py: 5 }}>
-    //   <Typography variant="h4" gutterBottom>
-    //     Projects
-    //   </Typography>
-    //   <Grid container spacing={4} mt={2}>
-    //     {projects.map((project, index) => (
-    //       <Grid item xs={12} sm={6} md={4} key={index}>
-    //         <Card>
-    //           <CardMedia
-    //             component="img"
-    //             height="140"
-    //             image={project.image}
-    //             alt={project.title}
-    //           />
-    //           <CardContent>
-    //             <Typography variant="h6">{project.title}</Typography>
-    //             <Typography variant="body2">{project.description}</Typography>
-    //           </CardContent>
-    //         </Card>
-    //       </Grid>
-    //     ))}
-    //   </Grid>
-    // </Box>
+    
   );
 };
 

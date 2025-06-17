@@ -13,7 +13,7 @@ const Hero = () => {
       }, [dispatch]);
     if (status === "loading") return <CircularProgress />;
     if (status === "failed") return <p>Error: {error}</p>;
-    console.log(users);
+    // console.log(users);
     
   return (
     <>
@@ -34,8 +34,6 @@ const Hero = () => {
             <Typography variant="h2" >
             Welcome to My Dashboard. 
             </Typography>
-            
-            {/* <CardMedia image={users.profilePicture} alt={users.name} sx={{ width: 200, height: 200, borderRadius: '50%' }} /> */}
             <Typography variant="h5" gutterBottom>
             {users.bio}
             </Typography>
