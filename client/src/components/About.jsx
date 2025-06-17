@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Divider, Typography } from '@mui/material';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchUsers } from '../slices/userSlice';
@@ -17,10 +17,34 @@ const About = () => {
     console.log(users);
   return (
   <Box id="about" sx={{ py: 5 }}>
-    <Typography variant="h4" gutterBottom>About Me</Typography>
+    <Box>
+      <Typography variant="h4" gutterBottom>About Me</Typography>
     <Typography variant="body1">
       {status === "succeeded" && users.about}
     </Typography>
+    </Box>
+    <Divider sx={{py:2}} />
+    <Box>
+      <Typography variant="h5" gutterBottom>Hobbies</Typography>
+      <Typography variant="body1">
+        {status === "succeeded" && users.hobbies.map((hobby, index) => (
+          <li key={index}>
+            {hobby}
+          </li>
+        ))}
+      </Typography>
+    </Box>
+    <Divider sx={{py:2}} />
+    <Box>
+      <Typography variant="h5" gutterBottom>Skills</Typography>
+      <Typography variant="body1">
+        {status === "succeeded" && users.skills_technology.map((skill, index) => (
+          <li key={index}>
+            {skill}
+          </li>
+        ))}
+      </Typography>
+      </Box>
   </Box>
 );
 }
