@@ -54,7 +54,7 @@ const Navbar = () => {
         >
         <DialogContent dividers>
           <img 
-            src="/public/assets/Karthick_R.jpg" 
+            src="/assets/Karthick_R.jpg" 
             alt="Full Profile" 
             style={{
       maxWidth: '90vw',
