@@ -16,7 +16,7 @@ const Navbar = () => {
     <Toolbar>
       <Box sx={{ flexGrow: 1 }} alignContent={"center"} display="flex" alignItems="center">
         <Avatar 
-        src="/public/assets/Karthick_R.jpg" // Replace with your image path
+        src="/assets/Karthick_R.jpg" // Replace with your image path
         alt="Profile" 
         sx={{ cursor: 'pointer', width: 40, height: 40 }} 
         onClick={handleClickOpen} 
