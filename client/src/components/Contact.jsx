@@ -209,7 +209,7 @@ const Contact = () => {
   });
 
   return (
-    <Box id="contact" sx={{ py: 5, backgroundColor: "#f5f5f5" }}>
+    <Box id="contact" sx={{ pt: 10, backgroundColor: "#f5f5f5" }}>
       <Card sx={{ p: 3, maxWidth: 600, margin: "0 auto", boxShadow: 3 }}>
         <Typography variant="h4" gutterBottom>
           Contact Me

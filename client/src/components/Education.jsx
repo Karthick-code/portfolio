@@ -29,7 +29,7 @@ const Education = () => {
 //   console.log(users);
 
   return (
-    <Box id="education" sx={{ py: 5,backgroundColor: "#f5f5f5" }}>
+    <Box id="education" sx={{ pt: 10,backgroundColor: "#f5f5f5" }}>
       <Typography variant="h4" gutterBottom>
         Education
       </Typography>

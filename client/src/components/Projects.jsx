@@ -34,7 +34,7 @@ const Projects = () => {
   }
   // console.log(projects);
   return (
-    <Box id="projects" sx={{ py: 5 }}>
+    <Box id="projects" sx={{ pt: 10 }}>
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

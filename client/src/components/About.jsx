@@ -16,7 +16,7 @@ const About = () => {
     if (status === "failed") return <p>Error: {error}</p>;
     // console.log(users);
   return (
-  <Box id="about" sx={{ py: 5 }}>
+  <Box id="about" sx={{ pt: 10 }}>
     <Box>
       <Typography variant="h4" gutterBottom>About Me</Typography>
     <Typography variant="body1">
