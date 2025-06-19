@@ -23,7 +23,7 @@ const Education = () => {
     dispatch(fetchUsers());
   }, [dispatch]);
 
-  if (status === "loading") return <CircularProgress />;
+  if (status === "loading") return <></>;
   if (status === "failed") return <p>Error: {error}</p>;
 
 //   console.log(users);

@@ -22,13 +22,7 @@ const Projects = () => {
   useEffect(() => {
     dispatch(fetchProjects());
   }, [dispatch]);
-  if (status === "loading") {
-    return (
-      <div>
-        <CircularProgress />{" "}
-      </div>
-    );
-  }
+  
   if (status === "failed") {
     return <div>Error: {error}</div>;
   }

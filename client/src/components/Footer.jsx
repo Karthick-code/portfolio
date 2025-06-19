@@ -22,7 +22,7 @@ const Footer = () => {
   useEffect(() => {
     dispatch(fetchUsers());
   }, [dispatch]);
-  if (status === "loading") return <CircularProgress />;
+  // if (status === "loading") return <CircularProgress />;
   if (status === "failed") return <p>Error: {error}</p>;
 
   
